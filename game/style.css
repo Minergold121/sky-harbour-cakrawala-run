@@ -1,0 +1,43 @@
+/* SKY HARBOUR — light page chrome around the fixed-size canvas. */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: #d9eef7;
+  color: #123247;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.stage { width: min(1280px, 100vw); padding: 10px 10px 16px; }
+canvas#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #8fd0e8;
+  border: 3px solid #ffd94d;
+  border-radius: 10px;
+  touch-action: none;
+  cursor: crosshair;
+}
+.underbar {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+#start-btn {
+  background: #e8542f;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+#start-btn:hover { background: #d14a28; }
+#mute-note { font-size: 14px; font-weight: 600; }
+.credit { margin-left: auto; font-size: 13px; color: #4a6a7e; }
